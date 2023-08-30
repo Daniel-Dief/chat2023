@@ -2,6 +2,8 @@ arquivos obrigatorios para o projeto
 
 index.html {
     pedir o nome do user
+    vai ter que ser um formulario com get
+    envia pro recebe.php
 }
 
 chat.html {
