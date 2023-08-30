@@ -1,0 +1,24 @@
+arquivos obrigatorios para o projeto
+
+index.html {
+    pedir o nome do user
+}
+
+chat.html {
+    uma pagina contendo a interface do chat
+    input para mensagem
+    e uma divi com altura fixa e um scroll dica(css: overflow)
+}
+
+recebe.php {
+    recebe o nome do user e a msg via get
+    e salva no BD
+}
+
+ler.php {
+    busca todas as informações do chat no BD
+}
+
+BD {
+    uma tabela que salva id (auto_incremente), nome, msg, datahora
+}
