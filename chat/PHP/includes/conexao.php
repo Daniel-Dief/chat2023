@@ -1,7 +1,7 @@
 <?php
 
 $dbname = 'chat';
-$user = 'root';
-$password = '';
+$dbuser = 'root';
+$dbpassword = '';
 
-$conexao = new PDO("mysql:host=localhost; dbname=$dbname", $user, $password);
+$conexao = new PDO("mysql:host=localhost; dbname=$dbname", $dbuser, $dbpassword);

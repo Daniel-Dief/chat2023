@@ -22,6 +22,7 @@ $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_SPECIAL_CHARS);
 		</header>
 		<main>
 			<?php
+			require('./PHP/actions/receber.php');
 			?>
 		</main>
 		<form action="./PHP/actions/enviar.php" method="get">
