@@ -27,7 +27,7 @@ body {
     font-size: 1rem;
 }
 
-.container .msg {
+.container form {
     position: sticky;
     top: 100%;
     background-color: #F5F5F5;
@@ -38,26 +38,27 @@ body {
     align-items: center;
 }
 
-.container .msg div {
+.container form div {
     display: flex;
     margin: 0;
     align-items: center;
     justify-content: center;
 }
 
-.container .msg .input {
+.container form .input {
     margin: 0 1rem;
     justify-content: space-between;
     width: 100%;
     gap: .5rem;
 }
 
-.container .msg .submit {
+.container form .submit {
     background-color: #32465A;
     padding: 1rem;
+    cursor: pointer;
 }
 
-.container .msg .input input {
+.container form .input input {
     border-radius: 1rem;
     border: none;
     background-color: #D5D5D5;
@@ -65,12 +66,12 @@ body {
     width: 95%;
 }
 
-.container .msg .input input:focus {
+.container form .input input:focus {
     background-color: #C2C2C2;
     outline: none;
 }
 
-.container .msg img {
+.container form img {
     height: 1rem;
     display: inline;
 }

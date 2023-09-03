@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 	<title>Whatsapp premium</title>
 </head>
+
 <body>
 	<div class="container">
 		<header>
@@ -16,17 +18,21 @@
 		</header>
 		<main>
 			<?php
+			$user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_SPECIAL_CHARS);
 			?>
 		</main>
-		<div class="msg">
+		<form action="./PHP/actions/enviar.php" method="get">
+			<input type="hidden" name="user" value="<?php echo $user; ?>">
 			<div class="input">
-				<input type="text" placeholder="Escreva sua mensagem...">
+				<input type="text" name="msg" placeholder="Escreva sua mensagem...">
 				<img src="./images/clip.png" alt="anexar">
 			</div>
 			<div class="submit">
 				<img src="./images/paper-plane.png" alt="enviar">
 			</div>
-		</div>
+		</form>
 	</div>
+	<script src="chat.js"></script>
 </body>
+
 </html>
