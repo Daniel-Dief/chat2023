@@ -11,6 +11,10 @@
 	<title>Whatsapp premium</title>
 </head>
 
+<?php
+$user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_SPECIAL_CHARS);
+?>
+
 <body>
 	<div class="container">
 		<header>
@@ -18,7 +22,6 @@
 		</header>
 		<main>
 			<?php
-			$user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_SPECIAL_CHARS);
 			?>
 		</main>
 		<form action="./PHP/actions/enviar.php" method="get">
