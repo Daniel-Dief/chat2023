@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-color: #27AE60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: #E6EAEA;
+    height: 90%;
+    width: 80%;
+}
+
+.container header {
+    text-align: center;
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+.container header h1{
+    margin: 0;
+    font-size: 1rem;
+}
+
+.container .msg {
+    position: sticky;
+    top: 100%;
+    background-color: #F5F5F5;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .msg div {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .msg .input {
+    margin: 0 1rem;
+    justify-content: space-between;
+    width: 100%;
+    gap: .5rem;
+}
+
+.container .msg .submit {
+    background-color: #32465A;
+    padding: 1rem;
+}
+
+.container .msg .input input {
+    border-radius: 1rem;
+    border: none;
+    background-color: #E5E5E5;
+    padding: .5rem;
+    width: 95%;
+}
+
+.container .msg .input input:focus {
+    background-color: #D2D2D2;
+    outline: none;
+}
+
+.container .msg img {
+    height: 1rem;
+    display: inline;
+}
