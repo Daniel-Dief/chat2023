@@ -23,6 +23,7 @@
 		</main>
 		<form action="./PHP/actions/enviar.php" method="get">
 			<input type="hidden" name="user" value="<?php echo $user; ?>">
+			<input type="hidden" name="datetime" value="">
 			<div class="input">
 				<input type="text" name="msg" placeholder="Escreva sua mensagem...">
 				<img src="./images/clip.png" alt="anexar">

@@ -1,7 +1,9 @@
 const form = document.querySelector("form");
+const datetime_input = document.querySelector("form input[name='datetime']")
 const submit = document.querySelector(".container form .submit");
 
 function enviar(){
+    datetime_input.value = (new Date().toLocaleString('sv-SE').replace(',', ''));
     form.submit();
 }
 
