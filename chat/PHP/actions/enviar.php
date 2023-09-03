@@ -10,4 +10,4 @@ $sql = "INSERT INTO `chat` (`nome`, `msg`, `datahora`) VALUES ('$nome', '$msg', 
 
 $conexao->query($sql);
 
-header('Location: ../../chat.php');
+header("Location: ../../chat.php?user=$nome");
