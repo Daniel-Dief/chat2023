@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="chat.css">
+    <link rel="icon" href="./images/icon.png" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@ $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_SPECIAL_CHARS);
 		</header>
 		<main>
 			<?php
-			require('./PHP/actions/receber.php');
+			require_once('./PHP/actions/receber.php');
 			?>
 		</main>
 		<form action="./PHP/actions/enviar.php" method="get">

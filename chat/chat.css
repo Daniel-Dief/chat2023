@@ -27,6 +27,46 @@ body {
     font-size: 1rem;
 }
 
+.container main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container main .caixa_msg {
+    background-color: #202C33;
+    color: #F5F5F5;
+    width: 50%;
+    margin: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    border-radius: 0 1rem 1rem 1rem;
+}
+
+.container main .caixa_msg .rotulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .8rem;
+}
+
+.container main .caixa_msg .rotulo p{
+    margin: .5rem 0;
+    color: #D8D8D8;
+}
+
+.container main .caixa_msg .mensagem {
+    text-align: justify;
+}
+
+.container main .me {
+    align-self: flex-end;
+    background-color: #008669;
+    color: #F5F5F5;
+    width: 50%;
+    margin: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    border-radius: 1rem 0 1rem 1rem;
+}
+
 .container form {
     position: sticky;
     top: 100%;
