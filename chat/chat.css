@@ -29,10 +29,25 @@ body {
 
 .container main {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     overflow-y: scroll;
     height: 85%;
+    margin: 1rem .3rem;
 }
+
+::-webkit-scrollbar {
+  width: .8rem;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #006b54;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #003d30; 
+}
+
 
 .container main .caixa_msg {
     background-color: #202C33;
