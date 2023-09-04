@@ -5,4 +5,4 @@ $sql = "DELETE FROM chat";
 
 $msgs = $conexao->query($sql);
 
-header("Location: ../../chat.php?user=$nome");
+header("Location: ../../index.html");

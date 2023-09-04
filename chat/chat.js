@@ -2,7 +2,6 @@ const form = document.querySelector("form");
 const datetime_input = document.querySelector("form input[name='datetime']")
 const submit = document.querySelector(".container form .submit");
 const input = document.querySelector(".input input");
-const deletar = document.querySelector("header form");
 
 function enviar(){
     datetime_input.value = (new Date().toLocaleString('sv-SE').replace(',', ''));
@@ -15,7 +14,7 @@ submit.addEventListener('click', () => {
 
 document.addEventListener('keypress', (event) => {
     (event.key == "Enter")?enviar():"";
-    (event.key == "~")?deletar.submit():"";
+    (event.key == "&")?window.location.href = "./PHP/actions/deletar.php":"";
 })
 
 setInterval(() => {

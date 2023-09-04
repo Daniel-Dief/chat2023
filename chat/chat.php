@@ -20,7 +20,6 @@ $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_SPECIAL_CHARS);
 	<div class="container">
 		<header>
 			<h1>Whatsapp premium</h1>
-			<form action="./PHP/actions/deletar.php"></form>
 		</header>
 		<main>
 			<?php
