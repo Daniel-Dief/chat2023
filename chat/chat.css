@@ -30,6 +30,8 @@ body {
 .container main {
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    height: 85%;
 }
 
 .container main .caixa_msg {
