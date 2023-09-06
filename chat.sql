@@ -27,11 +27,17 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `chat`
 --
 
+CREATE TABLE `nome` (
+  `id` int(10) NOT NULL,
+  `nomes` varchar(45) NOT NULL PRIMARY KEY);
+
+
 CREATE TABLE `chat` (
   `id` int(10) NOT NULL,
-  `nome` varchar(45) NOT NULL,
   `msg` text NOT NULL,
-  `datahora` datetime NOT NULL
+  `nome` INTEGER,
+  `datahora` datetime NOT NULL,
+  CONSTRAINT fk_nome FOREIGN KEY (nome) REFERENCES `nome` (nomes)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
