@@ -3,3 +3,7 @@ a fazer:
 chat.php {
     receber novas msgs sem recarregar a pagina
 }
+
+deletar_msg {
+    retornar com user
+}
