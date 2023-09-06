@@ -1,15 +1,5 @@
 a fazer:
 
-chat.html {
-    uma pagina contendo a interface do chat
-    input para mensagem
-    e uma divi com altura fixa e um scroll dica(css: overflow)
-}
-
-enviar.php {
-    falta testar
-}
-
-receber.php {
-    coleta todas as mensagens e manda pro chat.php
+chat.php {
+    receber novas msgs sem recarregar a pagina
 }
