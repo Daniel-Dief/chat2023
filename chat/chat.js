@@ -4,9 +4,6 @@ const submit = document.querySelector(".container form .submit");
 const input = document.querySelector(".input input");
 const chk = document.getElementById('chk')
 
-chk.addEventListener('change', ()=>{
-    document.body.classList.toggle('dark')
-})
 function enviar(){
     datetime_input.value = (new Date().toLocaleString('sv-SE').replace(',', ''));
     form.submit();
@@ -18,7 +15,7 @@ submit.addEventListener('click', () => {
 
 document.addEventListener('keypress', (event) => {
     (event.key == "Enter")?enviar():"";
-    (event.key == "&")?window.location.href = "./PHP/actions/deletar.php":"";
+    (event.key == "§")?window.location.href = "./PHP/actions/deletar.php":"";
 })
 
 setInterval(() => {
