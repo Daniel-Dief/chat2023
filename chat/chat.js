@@ -18,5 +18,5 @@ document.addEventListener('keypress', (event) => {
 })
 
 setInterval(() => {
-    (input.value == "")?location.reload():"";
+    (input == document.activeElement)?"":location.reload();
 }, 2000);
