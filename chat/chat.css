@@ -86,11 +86,13 @@ body {
 
 .container .me .rotulo p:first-child {
     color: #ffc547;
+    padding-right: 78%;
 }
 
 .container main .caixa_msg .rotulo p:first-child {
     color: #000;
 }
+
 
 
 .container form {
