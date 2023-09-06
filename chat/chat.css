@@ -65,7 +65,7 @@ body {
     font-size: .8rem;
 }
 
-.container main .caixa_msg .rotulo p{
+.container main .caixa_msg .rotulo p:last-child{
     margin: .5rem 0;
     color: #535353;
 }
@@ -88,14 +88,15 @@ body {
 
 
 
-.container .me .rotulo p:first-child {
-    color: #ffc547;
-    padding-right: 70%;
+.container .me .nome-user {
+    color: #ffc547 !important;
 }
 
-.container .nome-user{
+.container .caixa_msg .nome-user {
     color: #000;
+    font-size: 15px;
 }
+
 /*------*/
 
 .container form {
