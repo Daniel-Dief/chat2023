@@ -67,7 +67,7 @@ body {
 
 .container main .caixa_msg .rotulo p{
     margin: .5rem 0;
-    color: #7c7c7c;
+    color: #535353;
 }
 
 .container main .caixa_msg .mensagem {
@@ -84,14 +84,19 @@ body {
     border-radius: 1rem 0 1rem 1rem;
 }
 
+/*nomes user*/
+
+
+
 .container .me .rotulo p:first-child {
     color: #ffc547;
     padding-right: 70%;
 }
 
-
-
-
+.container .nome-user{
+    color: #000;
+}
+/*------*/
 
 .container form {
     position: sticky;
