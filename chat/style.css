@@ -4,14 +4,20 @@ body {
     height: 100vh;
     font-family: 'Numans', sans-serif;
 }
-
+body.dark-mode{
+    background-image: url(./images/black-pattern.jpg);
+}
+label{
+    color: white;
+    font-size: medium;
+}
 .container {
     height: 100%;
     align-content: center;
 }
 
 .card {
-    height: 240px;
+    height: 260px;
     margin-top: auto;
     margin-bottom: auto;
     width: 400px;
@@ -43,4 +49,24 @@ input:focus {
 .login_btn:hover {
     background-color: white;
     color: #000;
+}
+.dark-btn{
+    width: 70px;
+    height: 45px;
+    border: 5px solid #ffffff;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.dark-btn::before{
+    content: '';
+    position: absolute ;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border-radius: 50%;
+    top: 2.1px ;
+    left: 2px;
+    
+    
 }
