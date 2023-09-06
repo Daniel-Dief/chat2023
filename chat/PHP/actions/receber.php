@@ -18,7 +18,7 @@ foreach($msgs as $msg){
         $me = "";
         $lixeira = "";
     };
-    $array_msg[$i++] = "<div class='caixa_msg " . $me . "'>" . "<div class='rotulo'>" . "<p>" . $msg['nome'] . "</p>" . "<p>" . $msg['datahora'] . "</p>" . $lixeira . "</div>" . "<div class='mensagem'>" . $msg['msg'] . "</div>" . "</div>";
+    $array_msg[$i++] = "<div class='caixa_msg " . $me . "'>" . "<div class='rotulo'>" . "<p class='nome-user'>" . $msg['nome'] . "</p>" . "<p>" . $msg['datahora'] . "</p>" . $lixeira . "</div>" . "<div class='mensagem'>" . $msg['msg'] . "</div>" . "</div>";
 }
 
 $array_msg = array_reverse($array_msg);
