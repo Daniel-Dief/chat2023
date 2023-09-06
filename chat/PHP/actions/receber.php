@@ -13,7 +13,7 @@ $i = 0;
 foreach($msgs as $msg){
     if($msg['nome']==$user){
         $me = "me";
-        $lixeira = "<a href='./PHP/actions/deletar_msg.php?id=" . $msg['id'] . "&user=" . $user . "'><img src='./images/lixo.png' alt='apagar'></a>";
+        $lixeira = "<a href='./PHP/actions/deletar_msg.php?id=" . $msg['id'] . "'><img src='./images/lixo.png' alt='apagar'></a>";
     }else{
         $me = "";
         $lixeira = "";
