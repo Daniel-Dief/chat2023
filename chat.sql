@@ -29,9 +29,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `chat` (
   `id` int(10) NOT NULL,
-  `nome` varchar(45) NOT NULL,
   `msg` text NOT NULL,
-  `datahora` datetime NOT NULL
+  `nome` varchar(45) NOT NULL, 
+  `datahora` datetime NOT NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
