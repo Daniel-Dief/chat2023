@@ -21,7 +21,3 @@ document.addEventListener('keypress', (event) => {
     (event.key == "Enter")?enviar():"";
     (event.key == "¨")?window.location.href = "./PHP/actions/deletar.php":"";
 })
-
-setInterval(() => {
-    (input == document.activeElement)?"":location.reload();
-}, 2000);

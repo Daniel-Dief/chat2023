@@ -40,5 +40,6 @@ $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_SPECIAL_CHARS);
 		</form>
 	</div>
 	<script src="chat.js"></script>
+	<script src="receber.js"></script>
 </body>
 </html>

@@ -2,27 +2,20 @@
 
 require_once('./PHP/includes/conexao.php');
 
-$sql = "SELECT id, nome, msg, datahora FROM `chat`";
+$sql = "SELECT id, nome, perfil, msg, datahora FROM `chat`";
 
-$msgs = $conexao->query($sql);
+$retorno = $conexao->query($sql);
 
-$array_msg = array();
+$json = array();
 
-$i = 0;
-
-foreach($msgs as $msg){
-    if($msg['nome']==$user){
-        $me = "me";
-        $lixeira = "<a href='./PHP/actions/deletar_msg.php?id=" . $msg['id'] . "'><img src='./images/lixo.png' alt='apagar'></a>";
-    }else{
-        $me = "";
-        $lixeira = "";
-    };
-    $array_msg[$i++] = "<div class='caixa_msg " . $me . "'>" . "<div class='rotulo'>" . "<p class='nome-user'>" . $msg['nome'] . "</p>" . "<p>" . $msg['datahora'] . "</p>" . $lixeira . "</div>" . "<div class='mensagem'>" . $msg['msg'] . "</div>" . "</div>";
+foreach ($retorno as $r) {
+    $json[] = '{"id": "' . $r['id'] . '", 
+              "nome": "' . $r['nome'] . '",
+              "perfil": "' . $r['perfil'] . '",
+              "msg": "' . $r['msg'] . '",
+              "datahora": "' . $r['datahora'] . '"}';
 }
 
-$array_msg = array_reverse($array_msg);
+$json = array_reverse($json);
 
-foreach($array_msg as $arr){
-    echo $arr;
-}
+echo "[" . implode(", ", $json) . "]";
