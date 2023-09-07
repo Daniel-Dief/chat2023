@@ -28,7 +28,7 @@
                     <h3>Insira seu nome de usuário:</h3>
                 </div>
                 <div class="card-body">
-                    <form action="./chat.php" method="get">
+                    <form id="form" action="./chat.php" method="get">
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><img src="./images/whatsapp.svg"></span>
@@ -62,11 +62,7 @@
             </div>
         </div>
     </div>
-    <script>
-        chk.addEventListener('change', () => {
-            document.body.classList.toggle('dark')
-        })
-    </script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
