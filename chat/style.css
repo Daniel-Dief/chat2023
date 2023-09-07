@@ -30,7 +30,6 @@ label {
 }
 
 .card {
-    height: 260px;
     margin-top: auto;
     margin-bottom: auto;
     width: 400px;
@@ -119,4 +118,37 @@ input:focus {
 
 .fa-sun {
     color: #f39c12;
+}
+
+form {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.perfis {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+.perfis img {
+    width: 4rem;
+    height: 4rem;
+    margin: .5rem;
+    border: 2px solid #000;
+    background-color: #000;
+    border-radius: 50%;
+    transition: 400ms;
+}
+
+.perfis img:hover {
+    scale: 2;
+}
+
+label[for="perfis"]{
+    align-self: center;
+    font-size: 2rem;
 }
