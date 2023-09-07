@@ -2,7 +2,9 @@ const form = document.querySelector("form");
 const datetime_input = document.querySelector("form input[name='datetime']")
 const submit = document.querySelector(".container form .submit");
 const input = document.querySelector(".input input");
-const chk = document.getElementById('chk')
+const user = document.querySelector("input[name='user']");
+
+user.value = sessionStorage.getItem('user')
 
 function enviar(){
     datetime_input.value = (new Date().toLocaleString('sv-SE').replace(',', ''));
