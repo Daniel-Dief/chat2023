@@ -15,7 +15,7 @@ submit.addEventListener('click', () => {
 
 document.addEventListener('keypress', (event) => {
     (event.key == "Enter")?enviar():"";
-    (event.key == "§")?window.location.href = "./PHP/actions/deletar.php":"";
+    (event.key == "¨")?window.location.href = "./PHP/actions/deletar.php":"";
 })
 
 setInterval(() => {
