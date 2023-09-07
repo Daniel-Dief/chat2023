@@ -11,5 +11,4 @@ if(!empty($msg) && !empty($nome)){
     $conexao->query($sql);
 }
 
-
 header("Location: ../../chat.php?user=$nome");
