@@ -28,6 +28,7 @@ $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_SPECIAL_CHARS);
 		</main>
 		<form action="./PHP/actions/enviar.php" method="get">
 			<input type="hidden" name="user" value="?">
+			<input type="hidden" name="perfil" value="?">
 			<input type="hidden" name="datetime" value="">
 			<div class="input">
 				<input type="text" name="msg" placeholder="Escreva sua mensagem...">
