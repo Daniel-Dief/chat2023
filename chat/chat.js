@@ -7,6 +7,7 @@ const perfil = document.querySelector("input[name='perfil']");
 
 user.value = sessionStorage.getItem('user')
 perfil.value = sessionStorage.getItem('perfil')
+input.focus();
 
 function enviar(){
     datetime_input.value = (new Date().toLocaleString('sv-SE').replace(',', ''));
