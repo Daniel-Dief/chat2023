@@ -38,14 +38,20 @@ body {
 ::-webkit-scrollbar {
   width: .8rem;
 }
+
+::-webkit-scrollbar-track{
+    background-color: #ccc;
+    margin: .5rem 0;
+    border-radius: 1rem;
+}
  
 ::-webkit-scrollbar-thumb {
-  background: #006b54;
-  border-radius: 3px;
+  background: #ffc547;
+  border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #003d30; 
+  background: #b48b31; 
 }
 
 
