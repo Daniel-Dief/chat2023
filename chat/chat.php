@@ -22,9 +22,6 @@ $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_SPECIAL_CHARS);
 			<h1>Whatsapp premium</h1>
 		</header>
 		<main>
-			<?php
-				require_once('./PHP/actions/receber.php');
-			?>
 		</main>
 		<form action="./PHP/actions/enviar.php" method="get">
 			<input type="hidden" name="user" value="?">

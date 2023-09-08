@@ -1,6 +1,7 @@
 <?php
-
-require_once('./PHP/includes/conexao.php');
+/*import*/
+$conexao = new PDO("mysql:host=localhost; dbname=chat", 'root', '');
+/*import*/
 
 $sql = "SELECT id, nome, perfil, msg, datahora FROM `chat`";
 
@@ -18,4 +19,6 @@ foreach ($retorno as $r) {
 
 $json = array_reverse($json);
 
-echo "[" . implode(", ", $json) . "]";
+$json = "[" . implode(", ", $json) . "]";
+
+echo $json;
