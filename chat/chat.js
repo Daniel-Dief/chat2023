@@ -6,7 +6,7 @@ const user = document.querySelector("input[name='user']");
 const perfil = document.querySelector("input[name='perfil']");
 
 user.value = sessionStorage.getItem('user')
-perfil.value = sessionStorage.getItem('perfil')
+perfil.value = (sessionStorage.perfil == null)?"default":sessionStorage.perfil;
 input.focus();
 
 function enviar(){

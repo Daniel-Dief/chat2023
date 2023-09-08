@@ -147,4 +147,12 @@ body {
     height: 1rem;
     display: inline;
 }
-/* teste */
+
+
+.caixa_msg .img_perfil {
+    background-color: #000;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+}
