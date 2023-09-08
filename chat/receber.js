@@ -1,37 +1,27 @@
 const main = document.querySelector("main");
 
+function generateDiv(id, nome, data, msg){
+	div = "";
+	div += `<div class='caixa_msg${(sessionStorage.getItem('user') == nome)?" me'":"'"}>`;
+	div += `<div class='rotulo'>`;
+	div += `<p class='nome-user'>${nome}</p>`;
+	div += `<p>${data}</p>`
+	div += `${(sessionStorage.getItem('user') == nome)?`<a href='./PHP/actions/deletar_msg.php?id='${id}'><img src='./images/lixo.png' alt='apagar'></a>`:""}`
+	div += `</div>`;
+	div += `<div class='mensagem'>${msg}</div>`;
+	return div;
+}
+
 async function getMsgs(){
+	main.innerHTML = "";
     json = await fetch('./PHP/actions/receber.php').then((data) =>{
         return data.json();
     });
     json.forEach(line => {
-
+		main.innerHTML += generateDiv(line.id, line.nome, line.datahora, line.msg);
     });
 }
 
-/*
-outros 👇
+getMsgs();
 
-<div class='caixa_msg'>
-	<div class='rotulo'>
-		<p class='nome-user'>User</p>
-		<p>2023/08/06 22:26:00</p>
-	</div>
-	<div class='mensagem'>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deserunt vero, officiis ipsum esse, laborum quidem nobis consectetur repellendus vel, quaerat aut sint odio sapiente neque soluta! Ratione, voluptatem quod.
-	</div>
-</div>
-
-meu 👇
-
-<div class='caixa_msg me'>
-	<div class='rotulo'>
-		<p class='nome-user'>User</p>
-		<p>2023/08/06 22:26:00</p>
-        <a href='./PHP/actions/deletar_msg.php?id='${id}'><img src='./images/lixo.png' alt='apagar'></a>
-	</div>
-	<div class='mensagem'>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deserunt vero, officiis ipsum esse, laborum quidem nobis consectetur repellendus vel, quaerat aut sint odio sapiente neque soluta! Ratione, voluptatem quod.
-	</div>
-</div>
-*/
+setInterval(getMsgs, 1000);

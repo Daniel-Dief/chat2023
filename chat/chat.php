@@ -22,15 +22,7 @@ $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_SPECIAL_CHARS);
 			<h1>Whatsapp premium</h1>
 		</header>
 		<main>
-		<div class='caixa_msg'>
-				<div class='rotulo'>
-					<p class='nome-user'>User</p>
-					<p>2023/08/06 22:26:00</p>
-				</div>
-				<div class='mensagem'>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deserunt vero, officiis ipsum esse, laborum quidem nobis consectetur repellendus vel, quaerat aut sint odio sapiente neque soluta! Ratione, voluptatem quod.
-				</div>
-			</div>
+			<!-- mensagens do banco de dados -->
 		</main>
 		<form action="./PHP/actions/enviar.php" method="get">
 			<input type="hidden" name="user" value="?">
