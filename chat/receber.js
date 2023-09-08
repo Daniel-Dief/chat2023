@@ -5,8 +5,9 @@ function generateDiv(id, nome, data, msg){
 	div += `<div class='caixa_msg${(sessionStorage.getItem('user') == nome)?" me'":"'"}>`;
 	div += `<div class='rotulo'>`;
 	div += `<p class='nome-user'>${nome}</p>`;
-	div += `<p>${data}</p>`
-	div += `${(sessionStorage.getItem('user') == nome)?`<a href='./PHP/actions/deletar_msg.php?id='${id}'><img src='./images/lixo.png' alt='apagar'></a>`:""}`
+	div += `<p>${data}</p>`;
+	console.log(parseInt(id));
+	div += `${(sessionStorage.getItem('user') == nome)?`<a href='./PHP/actions/deletar_msg.php?id="${parseInt(id)}"'><img src='./images/lixo.png' alt='apagar'></a>`:""}`;
 	div += `</div>`;
 	div += `<div class='mensagem'>${msg}</div>`;
 	return div;
@@ -24,4 +25,8 @@ async function getMsgs(){
 
 getMsgs();
 
-setInterval(getMsgs, 1000);
+setInterval(() =>{
+	if(main.scrollTop == 0){
+		getMsgs();
+	}
+}, 1000);

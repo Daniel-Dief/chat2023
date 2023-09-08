@@ -8,4 +8,4 @@ $sql = "DELETE FROM chat WHERE id=$id";
 
 $conexao->query($sql);
 
-header("Location: ../../chat.php?user=$nome");
+header("Location: ../../chat.php");
