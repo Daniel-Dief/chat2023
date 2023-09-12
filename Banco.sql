@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 30-Ago-2023 às 21:34
+-- Tempo de geração: 12-Set-2023 às 13:31
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -28,10 +28,11 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `chat` (
-  `id` int(10) NOT NULL,
-  `nome` varchar(45) NOT NULL,
+  `id` int(11) NOT NULL,
+  `nome` varchar(50) NOT NULL,
+  `perfil` varchar(50) NOT NULL,
   `msg` text NOT NULL,
-  `datahora` datetime NOT NULL
+  `data` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -52,7 +53,7 @@ ALTER TABLE `chat`
 -- AUTO_INCREMENT de tabela `chat`
 --
 ALTER TABLE `chat`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
