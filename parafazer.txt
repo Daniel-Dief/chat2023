@@ -1,9 +1,3 @@
-
-
-a fazer:
-
-prioridades
-1------------
 chat.php {
     nao piscar a tela
     incluir sistema de notificação quando recebe msg(if)
@@ -13,9 +7,5 @@ receber.php {
     resolver o import do conexao.php
 }
 
-chat.php {
-    enviar de forma assincrona
-}
-
 notificação de mensagem
-funcionalidade pro clips com audios,figurinhasMerge branch 'main' of https://github.com/DanielDiefenthaelerSantos/chat2023 into main
+funcionalidade pro clips com imgs e figurinhas
