@@ -16,3 +16,15 @@ document.addEventListener('keypress', (event) => {
     (event.key == "Enter")?enviar():"";
     (event.key == "¨")?window.location.href = "./PHP/actions/deletar.php":"";
 })
+
+
+/**  ADICIONAR A FUNÇÃO DE SOM QUANDO CHEGAR MENSAGEM
+window.addEventListener('blur', function(){
+    
+})
+
+*/
+
+window.addEventListener('focus', function(){
+    document.title = "Whatsapp premium"
+})
