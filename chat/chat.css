@@ -7,6 +7,16 @@ body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
+body.dark {
+    margin: 0;
+    background-color: #4b3a11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
 
 .container {
     background-image: url(./images/chatbg.jpg);
@@ -78,6 +88,7 @@ body {
 
 .container main .caixa_msg .mensagem {
     text-align: justify;
+    margin-left: 18px;
 }
 
 .container main .me {
@@ -95,8 +106,10 @@ body {
 }
 
 .container .caixa_msg .nome-user {
-    color: #000;
+    color: #000000;
     font-size: 15px;
+    margin-right: 65%;
+    
 }
 
 .container form {
@@ -155,4 +168,15 @@ body {
     height: 3rem;
     width: 3rem;
     margin: 1rem;
+}
+.container main .me .rotulo img.img_perfil {
+    background-color: #000;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+    margin-right: 71%;
+}
+.container main .me .rotulo p{
+    color: #535353;
 }
