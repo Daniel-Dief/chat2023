@@ -1,7 +1,12 @@
+
+
 a fazer:
 
+prioridades
+1------------
 chat.php {
     nao piscar a tela
+    incluir sistema de notificação quando recebe msg(if)
 }
 
 receber.php {
@@ -11,3 +16,6 @@ receber.php {
 chat.php {
     enviar de forma assincrona
 }
+
+notificação de mensagem
+funcionalidade pro clips com audios,figurinhas
