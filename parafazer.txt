@@ -1,5 +1,9 @@
+
+
 a fazer:
 
+prioridades
+1------------
 chat.php {
     nao piscar a tela
 }
@@ -7,3 +11,13 @@ chat.php {
 receber.php {
     resolver o import do conexao.php
 }
+
+2-----------------
+notificação de mensagem
+funcionalidade pro clips com audios,figurinhas
+
+
+
+
+
+3-----------------
