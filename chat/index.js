@@ -25,32 +25,96 @@ function fotoPerfil(foto){
 
 img1.addEventListener('click', () => {
     fotoPerfil("cartoon");
+    img1.style.opacity = 1;
+    img2.style.opacity = 0.5;
+    img3.style.opacity = 0.5;
+    img4.style.opacity = 0.5;
+    img5.style.opacity = 0.5;
+    img6.style.opacity = 0.5;
+    img7.style.opacity = 0.5;
+    img8.style.opacity = 0.5;
 })
 
 img2.addEventListener('click', () => {
     fotoPerfil("chorao");
+    img2.style.opacity = 1;
+    img1.style.opacity = 0.5;
+    img3.style.opacity = 0.5;
+    img4.style.opacity = 0.5;
+    img5.style.opacity = 0.5;
+    img6.style.opacity = 0.5;
+    img7.style.opacity = 0.5;
+    img8.style.opacity = 0.5;
 })
 
 img3.addEventListener('click', () => {
     fotoPerfil("fake");
+    img3.style.opacity = 1;
+    img2.style.opacity = 0.5;
+    img1.style.opacity = 0.5;
+    img4.style.opacity = 0.5;
+    img5.style.opacity = 0.5;
+    img6.style.opacity = 0.5;
+    img7.style.opacity = 0.5;
+    img8.style.opacity = 0.5;
 })
 
 img4.addEventListener('click', () => {
     fotoPerfil("musculoso");
+    img4.style.opacity = 1;
+    img2.style.opacity = 0.5;
+    img3.style.opacity = 0.5;
+    img1.style.opacity = 0.5;
+    img5.style.opacity = 0.5;
+    img6.style.opacity = 0.5;
+    img7.style.opacity = 0.5;
+    img8.style.opacity = 0.5;
 })
 
 img5.addEventListener('click', () => {
     fotoPerfil("oclin");
+    img5.style.opacity = 1;
+    img2.style.opacity = 0.5;
+    img3.style.opacity = 0.5;
+    img4.style.opacity = 0.5;
+    img1.style.opacity = 0.5;
+    img6.style.opacity = 0.5;
+    img7.style.opacity = 0.5;
+    img8.style.opacity = 0.5;
 })
 
 img6.addEventListener('click', () => {
     fotoPerfil("pao");
+    img6.style.opacity = 1;
+    img2.style.opacity = 0.5;
+    img3.style.opacity = 0.5;
+    img4.style.opacity = 0.5;
+    img5.style.opacity = 0.5;
+    img1.style.opacity = 0.5;
+    img7.style.opacity = 0.5;
+    img8.style.opacity = 0.5;
 })
 
 img7.addEventListener('click', () => {
     fotoPerfil("capuz");
+    img7.style.opacity = 1;
+    img2.style.opacity = 0.5;
+    img3.style.opacity = 0.5;
+    img4.style.opacity = 0.5;
+    img5.style.opacity = 0.5;
+    img6.style.opacity = 0.5;
+    img1.style.opacity = 0.5;
+    img8.style.opacity = 0.5;
 })
 
 img8.addEventListener('click', () => {
     fotoPerfil("samurai");
+    img8.style.opacity = 1;
+    img2.style.opacity = 0.5;
+    img3.style.opacity = 0.5;
+    img4.style.opacity = 0.5;
+    img5.style.opacity = 0.5;
+    img6.style.opacity = 0.5;
+    img7.style.opacity = 0.5;
+    img1.style.opacity = 0.5;
 })
