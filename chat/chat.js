@@ -17,6 +17,9 @@ document.addEventListener('keypress', (event) => {
     (event.key == "¨")?window.location.href = "./PHP/actions/deletar.php":"";
 })
 
+function enviar(){
+    form.submit();
+}
 
 /**  ADICIONAR A FUNÇÃO DE SOM QUANDO CHEGAR MENSAGEM
 window.addEventListener('blur', function(){
