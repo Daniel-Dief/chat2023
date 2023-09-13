@@ -20,6 +20,9 @@ document.addEventListener('keypress', (event) => {
     (event.key == "¨")?window.location.href = "./PHP/actions/deletar.php":"";
 })
 
+function enviar(){
+    form.submit();
+}
 
 /** 
 window.addEventListener('blur', function(){
