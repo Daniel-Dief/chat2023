@@ -56,4 +56,4 @@ window.addEventListener('focus', function(){
 
 window.addEventListener('blur', function(){
     audio.play(notificacao.mp3);
-})
+})*/
