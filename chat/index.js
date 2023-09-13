@@ -9,18 +9,24 @@ const img5 = document.getElementById("oclin");
 const img6 = document.getElementById("pao");
 const img7 = document.getElementById("capuz");
 const img8 = document.getElementById("samurai");
+sessionStorage.setItem('theme', 'light');
 
 
 chk.addEventListener('change', () => {
-    document.body.classList.toggle('dark');
-    sessionStorage.setItem('theme', 'dark');
+    if (sessionStorage.getItem('theme') == 'light') {
+        sessionStorage.setItem('theme', 'dark')
+        document.body.classList.toggle('dark');
+    } else {
+        sessionStorage.setItem('theme', 'light');
+        document.body.classList.remove('dark');
+    }
 })
 
-form.addEventListener('submit', ()=>{
+form.addEventListener('submit', () => {
     sessionStorage.setItem('user', input.value);
 })
 
-function fotoPerfil(foto){
+function fotoPerfil(foto) {
     sessionStorage.setItem('perfil', foto);
 }
 

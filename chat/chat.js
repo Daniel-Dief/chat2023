@@ -8,6 +8,12 @@ user.value = sessionStorage.getItem('user')
 perfil.value = (sessionStorage.perfil == null)?"default":sessionStorage.perfil;
 input.focus();
 
+if (sessionStorage.getItem('theme') == 'dark') {
+    document.body.classList.toggle('dark');
+} else {
+    document.body.classList.remove('dark');
+}
+
 submit.addEventListener('click', () => {
     enviar();
 })
