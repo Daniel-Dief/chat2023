@@ -3,12 +3,11 @@ const submit = document.querySelector(".container form .submit");
 const input = document.querySelector(".input input");
 const user = document.querySelector("input[name='user']");
 const perfil = document.querySelector("input[name='perfil']");
-
-
 const noti = new Audio('../audio/notificacao.mp3');
 
-user.value = sessionStorage.getItem('user')
-perfil.value = (sessionStorage.perfil == null)?"default":sessionStorage.perfil;
+if(sessionStorage.getItem('perfil') == null){
+    sessionStorage.setItem('perfil', 'default');
+}
 input.focus();
 
 if (sessionStorage.getItem('theme') == 'dark') {
