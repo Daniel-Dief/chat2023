@@ -15,7 +15,7 @@ function generateDiv(id, nome, perfil, data, msg){
 
 async function getMsgs(){
 	main.innerHTML = "";
-    json = await fetch('./PHP/actions/receber.php').then((data) =>{
+    json = await fetch('./PHP/actions/receber.php', {method:"POST"}).then((data) =>{
         return data.json();
     });
     json.forEach(line => {
