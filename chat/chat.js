@@ -4,6 +4,9 @@ const input = document.querySelector(".input input");
 const user = document.querySelector("input[name='user']");
 const perfil = document.querySelector("input[name='perfil']");
 
+
+const noti = new Audio('../audio/notificacao.mp3');
+
 user.value = sessionStorage.getItem('user')
 perfil.value = (sessionStorage.perfil == null)?"default":sessionStorage.perfil;
 input.focus();
@@ -27,12 +30,13 @@ function enviar(){
     form.submit();
 }
 
-/**  ADICIONAR A FUNÇÃO DE SOM QUANDO CHEGAR MENSAGEM
+/** 
 window.addEventListener('blur', function(){
-    
+    audio.play(notificacao.mp3);
 })
-
 */
+
+
 
 window.addEventListener('focus', function(){
     document.title = "Whatsapp premium"
