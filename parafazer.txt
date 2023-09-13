@@ -2,6 +2,7 @@ a fazer:
 
 chat.php {
     nao piscar a tela
+    incluir sistema de notificação quando recebe msg(if)
 }
 
 receber.php {
