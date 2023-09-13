@@ -36,8 +36,6 @@ window.addEventListener('blur', function(){
 })
 */
 
-
-
 window.addEventListener('focus', function(){
     document.title = "Whatsapp premium"
 })
