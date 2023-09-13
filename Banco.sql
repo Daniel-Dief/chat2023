@@ -32,7 +32,7 @@ CREATE TABLE `chat` (
   `nome` varchar(50) NOT NULL,
   `perfil` varchar(50) NOT NULL,
   `msg` text NOT NULL,
-  `data` datetime NOT NULL DEFAULT current_timestamp()
+  `datahora` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
