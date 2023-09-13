@@ -12,8 +12,10 @@ input.focus();
 
 if (sessionStorage.getItem('theme') == 'dark') {
     document.body.classList.toggle('dark');
+    Element.container.classList.add('dark');
 } else {
     document.body.classList.remove('dark');
+    Element.container.classList.add('dark');
 }
 
 submit.addEventListener('click', () => {
