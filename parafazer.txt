@@ -22,3 +22,207 @@ funcionalidade pro clips com audios,figurinhas
 
 
 3-----------------
+
+body {
+    margin: 0;
+    background-color: #FFC639;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    background-image: url(./images/chatbg.jpg);
+    height: 90%;
+    width: 80%;
+}
+
+.container header {
+    text-align: center;
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+.container header h1{
+    margin: 0;
+    font-size: 1rem;
+}
+
+.container main {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+    height: 85%;
+    margin: .6rem .3rem 0 .3rem;
+}
+body.dark {
+    margin: 0;
+    background-color: #a17916;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.container.dark{
+    background-image: url(./images/blackchatbg.jpg);
+    height: 90%;
+    width: 80%;
+}
+.container.dark header {
+    text-align: center;
+    width: 100%;
+    background-color: #2f2f2f;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+.container.dark header h1{
+    margin: 0;
+    font-size: 1rem;
+    color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: .8rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #ccc;
+    margin: .5rem 0;
+    border-radius: 1rem;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #ffc547;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b48b31; 
+}
+
+
+.container main .caixa_msg {
+    background-color:  #b1b0b0;
+    color: #000;
+    width: 50%;
+    margin: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    border-radius: 0 1rem 1rem 1rem;
+}
+.container.dark main .caixa_msg {
+    background-color:  #2f2f2f;
+    color: #ffffff;
+    width: 50%;
+    margin: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    border-radius: 0 1rem 1rem 1rem;
+}
+
+.container main .caixa_msg .rotulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .8rem;
+}
+
+.container main .caixa_msg .rotulo p:last-child{
+    margin: .5rem 0;
+    color: #535353;
+}
+
+.container main .caixa_msg .mensagem {
+    text-align: justify;
+    margin-left: 18px;
+}
+
+.container main .me {
+    align-self: flex-end;
+    background-color: #092442;
+    color: #000;
+    width: 50%;
+    margin: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    border-radius: 1rem 0 1rem 1rem;
+}
+
+.container .me .nome-user {
+    display: none;
+}
+
+.container .caixa_msg .nome-user {
+    color: #000000;
+    font-size: 15px;
+    margin-right: 65%;
+    
+}
+
+.container form {
+    position: sticky;
+    top: 100%;
+    background-color: #F5F5F5;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container form div {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form .input {
+    margin: 0 1rem;
+    justify-content: space-between;
+    width: 100%;
+    gap: .5rem;
+}
+
+.container form .submit {
+    background-color: #18293a;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.container form .input input {
+    border-radius: 1rem;
+    border: none;
+    background-color: #D5D5D5;
+    padding: .5rem;
+    width: 95%;
+}
+
+.container form .input input:focus {
+    background-color: #C2C2C2;
+    outline: none;
+}
+
+.container form img {
+    height: 1rem;
+    display: inline;
+}
+
+
+.caixa_msg .img_perfil {
+    background-color: #000;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 1rem;
+}
+.container main .me .rotulo img.img_perfil {
+    background-color: #000;
+    border-radius: 50%;
+    margin: 1rem;
+    margin-right: 71%;
+}
+.container main .me .rotulo p{
+    color: #535353;
+}
