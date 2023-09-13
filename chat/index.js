@@ -13,6 +13,7 @@ const img8 = document.getElementById("samurai");
 
 chk.addEventListener('change', () => {
     document.body.classList.toggle('dark');
+    sessionStorage.setItem('theme', 'dark');
 })
 
 form.addEventListener('submit', ()=>{
