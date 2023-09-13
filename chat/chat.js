@@ -22,20 +22,39 @@ submit.addEventListener('click', () => {
 })
 
 document.addEventListener('keypress', (event) => {
-    (event.key == "Enter")?enviar():"";
     (event.key == "¨")?window.location.href = "./PHP/actions/deletar.php":"";
 })
 
+form.addEventListener("submit", (form) =>{
+    form.preventDefault();
+    enviar();
+})
+
 function enviar(){
-    form.submit();
+    let env_form = new FormData();
+    env_form.append('msg', input.value);
+    env_form.append('user', sessionStorage.getItem('user'));
+    env_form.append('perfil', sessionStorage.getItem('perfil'));
+
+    fetch('./PHP/actions/enviar.php', {
+        method:"POST",
+        body:env_form
+    }).then((res) => {
+        console.log(env_form);
+        if(!res.ok){
+            alert("erro no envio");
+        } else {
+            input.value = "";
+        }
+    })
 }
 
-/** 
+/*
+window.addEventListener('focus', function(){
+    document.title = "Whatsapp premium"
+})
+
 window.addEventListener('blur', function(){
     audio.play(notificacao.mp3);
 })
 */
-
-window.addEventListener('focus', function(){
-    document.title = "Whatsapp premium"
-})

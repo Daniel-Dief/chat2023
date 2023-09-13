@@ -7,3 +7,7 @@ chat.php {
 receber.php {
     resolver o import do conexao.php
 }
+
+chat.php {
+    enviar de forma assincrona
+}
