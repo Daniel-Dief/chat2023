@@ -1,4 +1,5 @@
 const form = document.querySelector("form");
+const container = document.querySelector(".container");
 const submit = document.querySelector(".container form .submit");
 const input = document.querySelector(".input input");
 const user = document.querySelector("input[name='user']");
@@ -12,10 +13,10 @@ input.focus();
 
 if (sessionStorage.getItem('theme') == 'dark') {
     document.body.classList.toggle('dark');
-    Element.container.classList.add('dark');
+    container.classList.toggle('dark');
 } else {
     document.body.classList.remove('dark');
-    Element.container.classList.add('dark');
+    container.classList.remove('dark');
 }
 
 submit.addEventListener('click', () => {
