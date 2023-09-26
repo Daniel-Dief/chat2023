@@ -4,7 +4,6 @@ const submit = document.querySelector(".container form .submit");
 const input = document.querySelector(".input input");
 const user = document.querySelector("input[name='user']");
 const perfil = document.querySelector("input[name='perfil']");
-const noti = new Audio('../audio/notificacao.mp3');
 
 if(sessionStorage.getItem('perfil') == null){
     sessionStorage.setItem('perfil', 'default');
@@ -50,12 +49,3 @@ function enviar(){
         }
     })
 }
-
-/*
-window.addEventListener('focus', function(){
-    document.title = "Whatsapp premium"
-})
-
-window.addEventListener('blur', function(){
-    audio.play(notificacao.mp3);
-})*/
