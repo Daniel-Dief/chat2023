@@ -23,6 +23,9 @@ async function getMsgs() {
 		return data.json();
 	});
 	json.forEach(line => {
+		if(line.msg == "backflip"){
+			document.body.innerHTML += "<style>*{animation: 2s spin linear infinite;}@keyframes spin{from{transform: rotate(0deg);}to{transform: rotate(360deg);}}</style>";
+		}
 		msgsNow.push(generateDiv(line.id, line.nome, line.perfil, line.datahora, line.msg));
 	});
 
