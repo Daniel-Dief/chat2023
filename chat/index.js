@@ -27,6 +27,9 @@ form.addEventListener('submit', () => {
     if(input.value == 'Miguel' || input.value == 'miguel'){
         sessionStorage.setItem('perfil', 'miguel');
     }
+    if(input.value == 'indo ali'){
+        sessionStorage.setItem('perfil', 'welove');
+    }
 })
 
 function fotoPerfil(foto) {
