@@ -18,6 +18,7 @@ function generateDiv(id, nome, perfil, data, msg) {
 }
 
 async function getMsgs() {
+	msgsNow = [];
 	json = await fetch('./PHP/actions/receber.php', { method: "POST" }).then((data) => {
 		return data.json();
 	});
@@ -25,27 +26,26 @@ async function getMsgs() {
 		msgsNow.push(generateDiv(line.id, line.nome, line.perfil, line.datahora, line.msg));
 	});
 
-
+	/*verificando se as arrays são iguais*/
 	msgsVerify = true;
-	for (let i = 0; i < 2; i++) {
-		if (msgsNow[i] != msgsOld[i]) {
-			msgsVerify = false;
-			break
+	if(msgsNow.length == msgsOld.length){
+		for (let i=0;i<msgsNow.length;i++){
+			if(msgsNow[i] != msgsOld[i]){
+				msgsVerify = false;
+				break;
+			}
 		}
-	}
-	if (msgsNow.length != msgsOld.length) {
+	} else {
 		msgsVerify = false
 	}
 
-	if (!msgsVerify) {
-		msgsNow.forEach(line => {
-			main.innerHTML += line;
-		})
-		msgsOld = msgsNow;
-		msgsNow = [];
+	/*imprimindo as mensagens*/
+	if(!msgsVerify){
+		main.innerHTML = "";
+		msgsNow.forEach(msg => {
+			main.innerHTML += msg;
+		});
 	}
-
-	console.log(msgsVerify);
 }
 
 getMsgs();
