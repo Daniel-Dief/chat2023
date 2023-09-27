@@ -41,7 +41,6 @@ function enviar(){
         method:"POST",
         body:env_form
     }).then((res) => {
-        console.log(env_form);
         if(!res.ok){
             alert("erro no envio");
         } else {

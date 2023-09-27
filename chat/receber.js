@@ -2,6 +2,7 @@ const main = document.querySelector("main");
 var msgsOld = [];
 var msgsNow = [];
 var msgsVerify;
+var never;
 
 
 function generateDiv(id, nome, perfil, data, msg) {
@@ -19,6 +20,7 @@ function generateDiv(id, nome, perfil, data, msg) {
 
 async function getMsgs() {
 	msgsNow = [];
+	never = false;
 	json = await fetch('./PHP/actions/receber.php', { method: "POST" }).then((data) => {
 		return data.json();
 	});
@@ -27,7 +29,7 @@ async function getMsgs() {
 			document.body.innerHTML += "<style>*{animation: 2s spin linear infinite;}@keyframes spin{from{transform: rotate(0deg);}to{transform: rotate(360deg);}}</style>";
 		}
 		if(line.msg == "never gonna give"){
-			window.location.href = "https://www.youtube.com/embed/dQw4w9WgXcQ";
+			never = true;
 		}
 		msgsNow.push(generateDiv(line.id, line.nome, line.perfil, line.datahora, line.msg));
 	});
@@ -52,11 +54,17 @@ async function getMsgs() {
 			main.innerHTML += msg;
 		});
 	}
+
+	if(never){
+		clearInterval(intervalo);
+		document.body.innerHTML = "<video autoplay><source src='./images/never.mp4' type='video/mp4'></video>";
+		document.body.innerHTML += "<style>body{background-color: black;}</style>";
+	}
 }
 
 getMsgs();
 
-setInterval(() => {
+intervalo = setInterval(() => {
 	if (main.scrollTop == 0) {
 		getMsgs();
 	}
