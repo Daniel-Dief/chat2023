@@ -19,6 +19,9 @@ if (sessionStorage.getItem('theme') == 'dark') {
 }
 
 submit.addEventListener('click', () => {
+    if(input.value == "backflip"){
+        document.body.innerHTML += "<style>*{animation: 2s spin linear infinite;}@keyframes spin{from{transform: rotate(0deg);}to{transform: rotate(360deg);}}</style>";
+    }
     enviar();
 })
 
