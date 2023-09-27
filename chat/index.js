@@ -24,6 +24,9 @@ chk.addEventListener('change', () => {
 
 form.addEventListener('submit', () => {
     sessionStorage.setItem('user', input.value);
+    if(input.value == 'Miguel' || input.value == 'miguel'){
+        sessionStorage.setItem('perfil', 'miguel');
+    }
 })
 
 function fotoPerfil(foto) {
